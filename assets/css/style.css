@@ -887,6 +887,29 @@ section {
   padding-top: 5px;
 }
 
+.contact .info .whatsapp {
+  margin-bottom: 18px;
+}
+
+.contact .info .whatsapp a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact .info .whatsapp i {
+  float: none;
+  margin: 0;
+}
+
+.contact .info .whatsapp h4,
+.contact .info .whatsapp p {
+  padding: 0;
+  margin: 0;
+}
+
 .contact .info .social-links {
   padding-left: 60px;
 }
