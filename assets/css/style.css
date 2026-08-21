@@ -430,6 +430,89 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Tools & AI Agent
+--------------------------------------------------------------*/
+.tools-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tools-row {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  background: #fff;
+  padding: 18px 24px;
+  border-radius: 6px;
+  border: 1px solid #eef2f7;
+  transition: 0.25s;
+}
+
+.tools-row:hover {
+  border-color: #149ddd;
+}
+
+.tools-row h4 {
+  flex: 0 0 190px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #149ddd;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin: 0;
+}
+
+.tools-icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 28px;
+  flex: 1;
+}
+
+.tool-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tool-item img,
+.tool-item .tool-icon-fallback {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.tool-item .tool-icon-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #149ddd;
+}
+
+.tool-item span {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #363c44;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .tools-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .tools-row h4 {
+    flex: none;
+  }
+}
+
+/*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
 .skills .progress {
